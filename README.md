@@ -18,7 +18,7 @@ Crie um arquivo tsconfig.json na raiz do projeto com o seguinte conteúdo:
 ```
 {
   "compilerOptions": {
-    "target": "ES2019",
+    "target": "ES2022",
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
