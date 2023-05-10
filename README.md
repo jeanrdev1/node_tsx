@@ -4,18 +4,18 @@ Node Base TypeScript Project
 Abra um terminal e crie uma nova pasta para sua aplicação.
 
 Dentro da pasta, execute o seguinte comando para iniciar um projeto Node.js vazio:
-
+```
 npm init -y
-
+```
 Instale as dependências necessárias para o projeto:
-
+```
 npm install --save-dev typescript ts-node @types/node
-
+```
 typescript é o pacote que nos permite usar TypeScript no Node.js
 ts-node é uma ferramenta que nos permite executar código TypeScript diretamente no Node.js, sem a necessidade de compilar primeiro.
 @types/node fornece tipos para o Node.js.
 Crie um arquivo tsconfig.json na raiz do projeto com o seguinte conteúdo:
-
+```
 {
   "compilerOptions": {
     "target": "ES2019",
@@ -29,29 +29,29 @@ Crie um arquivo tsconfig.json na raiz do projeto com o seguinte conteúdo:
     "node_modules"
   ]
 }
-
+```
 Este arquivo define as opções do compilador TypeScript. A opção outDir define o diretório onde os arquivos compilados serão salvos, enquanto sourceMap gera arquivos de mapeamento para depuração.
 
 Crie um arquivo src/index.ts com o seguinte conteúdo:
-
+```
 console.log('Hello, TypeScript!');
-
+```
 Adicione um script ao arquivo package.json para executar o arquivo TypeScript:
-
+```
 {
   "scripts": {
     "start": "ts-node src/index.ts"
   }
 }
-
+```
 Execute a aplicação com o seguinte comando:
-
+```
 npm start
-
+```
 O console exibirá a mensagem "Hello, TypeScript!".
 
 O arquivo package.json pode ser algo como:
-
+```
 {
   "name": "minha-aplicacao",
   "version": "1.0.0",
@@ -74,3 +74,4 @@ O arquivo package.json pode ser algo como:
     "typescript": "^4.3.5"
   }
 }
+```
